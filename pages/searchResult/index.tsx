@@ -9,7 +9,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import OutlinedInput from '@mui/material/OutlinedInput';
-import SelectChangeEvent from '@mui/material/SelectChangeEvent';
+import { SelectChangeEvent } from '@mui/material/Select';
 import { NextPage } from "next";
 import Head from "next/head";
 import { useTranslation } from "react-i18next";
@@ -17,7 +17,7 @@ import BackgroundImage from "@/components/ui/BackgroundImage";
 import bgSearch from "@/assets/images/search.jpg";
 import FilterSearch from "@/pages/searchResult/_components/Filter";
 import StarHalfRoundedIcon from '@mui/icons-material/StarHalfRounded';
-import SearchItem from "@/components/products/ProductDisplay";
+// import SearchItem from "@/components/products/ProductDisplay";
 
 interface Props {}
 const Index: NextPage<Props> = () => {
@@ -81,7 +81,7 @@ const Index: NextPage<Props> = () => {
                 </FormControl>
               </Stack>
             </Stack>
-              <SearchItem  />
+              {/* <SearchItem  /> */}
           </Grid>
         </Grid>
       </Container>
